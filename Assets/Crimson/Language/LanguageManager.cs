@@ -10,7 +10,6 @@ namespace Crimson.Language
         French,
         English
     }
-
     public class LanguageManager : Singleton<LanguageManager>
     {
 

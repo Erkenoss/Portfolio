@@ -1,0 +1,282 @@
+using Crimson.UI.Pagination;
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace Crimson.Portfolio
+{
+    public enum EPanel
+    {
+        None,
+        Start,
+        VR,
+        AR,
+        Game,
+        Others
+    }
+
+    /// <summary>
+    /// Structure to design every panel of the portfolio
+    /// </summary>
+    [Serializable]
+    public struct SectorStruct
+    {
+        #region Public
+
+        public EPanel Pan { get { return pan; } }
+        public List<PortfolioModel> ModelList { get { return modelList; } }
+        public GameObject Panel {  get { return panel; } }
+
+        #endregion
+
+        #region Private
+
+        [Tooltip("EPanel to defined what panel is it")]
+        [SerializeField]
+        private EPanel pan;
+
+        [Tooltip("List of all model to navigate in the panel")]
+        [SerializeField]
+        private List<PortfolioModel> modelList;
+
+        [Tooltip("GameObject of the panel")]
+        [SerializeField]
+        private GameObject panel;
+
+        #endregion
+    }
+
+    public class PortfolioUIManager: UIManager<PortfolioModel>
+    {
+        #region Public Fields
+
+        public EPanel Panel {  get { return panel; } }
+
+        #endregion
+
+        #region Private Fields
+
+        [Tooltip("Ref to the view of the panel")]
+        [SerializeField]
+        private PageView view = null;
+
+        [Tooltip("Basic Alpha we want for the image we will use wwhen PageModel need to be apply")]
+        [SerializeField]
+        private float baseAlpha = 0f;
+
+        [Tooltip("Alpha after modificiation")]
+        [SerializeField]
+        private float modifyAlpha = 0f;
+
+        [Tooltip("Raw image use to display the video")]
+        [SerializeField]
+        private RawImage videoImage = null;
+
+        /// <summary>
+        /// Panel currently choose by the player
+        /// </summary>
+        private EPanel panel = EPanel.None;
+
+        /// <summary>
+        /// Panel currently open
+        /// </summary>
+        private GameObject currentPanel = null;
+
+        /// <summary>
+        /// Container of all differents view panel
+        /// </summary>
+        Dictionary<EPanel, SectorStruct> panelDictionary = new Dictionary<EPanel, SectorStruct>();
+
+        [Tooltip("Structure to defined all component of every panels")]
+        [SerializeField]
+        private List<SectorStruct> sectorList = new List<SectorStruct>();
+
+        #endregion
+
+        #region Events
+
+        /// <summary>
+        /// Event to notify what happened when we change panel
+        /// </summary>
+        public event Action<EPanel> OnChangedPanel = null;
+
+        #endregion
+
+        #region MonoBehaviour Callbacks
+
+        protected override void Awake()
+        {
+            base.Awake();
+
+            Add();
+        }
+
+        private void Start()
+        {
+            if (view == null)
+            {
+                return;
+            }
+
+            ChangePanel();
+            panel = EPanel.VR;
+
+            if (containerList == null || containerList.Count == 0)
+            {
+                return;
+            }
+
+            OnChangedPanel?.Invoke(panel);
+            AlphaModifier();
+        }
+
+        #endregion
+
+        #region Public Methods
+
+        public override void Next()
+        {
+            if (view == null || containerList == null || containerList.Count == 0)
+            {
+                return;
+            }
+
+            base.Next();
+
+            view.UpdateView(containerList[index]);
+            panel = containerList[index].Panel;
+
+            OnChangedPanel?.Invoke(panel);
+        }
+
+        public override void Prev()
+        {
+            if (view == null || containerList == null || containerList.Count == 0)
+            {
+                return;
+            }
+
+            base.Prev();
+            
+            view.UpdateView(containerList[index]);
+            panel = containerList[index].Panel;
+
+            OnChangedPanel?.Invoke(panel);
+        }
+
+        /// <summary>
+        /// Use to return at the start panel
+        /// </summary>
+        public override void Back()
+        {
+            panel = EPanel.Start;
+            ChangePanel();
+            panel = EPanel.VR;
+        }
+
+        /// <summary>
+        /// Use to notify the event OnChangedPanel regardless the panel
+        /// </summary>
+        /// <param name="pan"></param>
+        public override void SetPanel()
+        {
+            ChangePanel();
+            OnChangedPanel?.Invoke(panel);
+        }
+
+        #endregion
+
+        #region Private Methods
+
+        /// <summary>
+        /// Use to add all panel in panelDictionary
+        /// </summary>
+        /// <param name="pan"></param>
+        /// <param name="_panel"></param>
+        private void Add()
+        {
+            if (sectorList == null || sectorList.Count == 0)
+            {
+                return;
+            }
+
+            foreach (SectorStruct sector in sectorList)
+            {
+                if (!panelDictionary.ContainsKey(sector.Pan))
+                {
+                    panelDictionary[sector.Pan] = sector;
+                }
+            }
+
+            panel = sectorList[0].Pan;
+            currentPanel = sectorList[0].Panel;
+        }
+
+        /// <summary>
+        /// Change panel base on panel enum
+        /// </summary>
+        private void ChangePanel()
+        {
+            if (panelDictionary.TryGetValue(panel, out var nextSector))
+            {
+                if (currentPanel != null)
+                {
+                    currentPanel.SetActive(false);
+                }
+
+                nextSector.Panel.SetActive(true);
+                currentPanel = nextSector.Panel;
+
+                if (nextSector.ModelList != null && nextSector.ModelList.Count > 0)
+                {
+                    containerList = nextSector.ModelList;
+                }
+
+                index = 0;
+
+                if (view == null || containerList == null || containerList.Count == 0)
+                {
+                    return;
+                }
+
+                view.UpdateView(containerList[index]);
+                AlphaModifier();
+            }
+        }
+
+        /// <summary>
+        /// Use to mmomdify the value of the alpha of the raw image
+        /// </summary>
+        private void AlphaModifier()
+        {
+            if (videoImage != null)
+            {
+                Color color = videoImage.color;
+
+                if (panel == EPanel.Start)
+                {
+                    if (color.a == baseAlpha)
+                    {
+                        return;
+                    }
+
+                    color.a = baseAlpha / modifyAlpha;
+                    videoImage.color = color;
+                }
+                else
+                {
+                    if (color.a == modifyAlpha)
+                    {
+                        return;
+                    }
+
+                    color.a = 1f;
+                    videoImage.color = color;
+                }
+            }
+        }
+
+        #endregion
+    }
+}

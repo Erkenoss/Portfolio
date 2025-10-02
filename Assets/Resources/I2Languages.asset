@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0b0c553be8edd4682e9180fdd13e37, type: 3}
+  m_Name: I2Languages
+  m_EditorClassIdentifier: Assembly-CSharp::I2.Loc.LanguageSourceAsset
+  mSource:
+    UserAgreesToHaveItOnTheScene: 0
+    UserAgreesToHaveItInsideThePluginsFolder: 0
+    GoogleLiveSyncIsUptoDate: 1
+    mTerms:
+    - Term: Main Menu/Title
+      TermType: 0
+      Description: 
+      Languages:
+      - Portfolio
+      - Portfolio
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/Start
+      TermType: 0
+      Description: 
+      Languages:
+      - Start
+      - Commencer
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/Setting
+      TermType: 0
+      Description: 
+      Languages:
+      - Setting
+      - Options
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/Infos
+      TermType: 0
+      Description: 
+      Languages:
+      - Infos
+      - Infos
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/Quit
+      TermType: 0
+      Description: 
+      Languages:
+      - Quit
+      - Quitter
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/English
+      TermType: 0
+      Description: 
+      Languages:
+      - English
+      - Anglais
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/French
+      TermType: 0
+      Description: 
+      Languages:
+      - French
+      - "Fran\xE7ais"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/LinkedIn
+      TermType: 0
+      Description: 
+      Languages:
+      - LinkedIn
+      - LinkedIn
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/GitHub
+      TermType: 0
+      Description: 
+      Languages:
+      - Github
+      - Github
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/Profile
+      TermType: 0
+      Description: 
+      Languages:
+      - Profile
+      - Profil
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/VR
+      TermType: 0
+      Description: 
+      Languages:
+      - VR
+      - RV
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/Game
+      TermType: 0
+      Description: 
+      Languages:
+      - Video Game
+      - "Jeu Vid\xE9o"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/Other
+      TermType: 0
+      Description: 
+      Languages:
+      - Other
+      - Autre
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/Back
+      TermType: 0
+      Description: 
+      Languages:
+      - Back
+      - Retour
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Model Description/
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Model Description/VR
+      TermType: 0
+      Description: 
+      Languages:
+      - The differents realization in VR
+      - "Les diff\xE9rentes r\xE9alisation en RV"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Model Description/AR
+      TermType: 0
+      Description: 
+      Languages:
+      - The differents realization in AR
+      - "Les diff\xE9rentes r\xE9alisation en RA"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Model Description/Game
+      TermType: 0
+      Description: 
+      Languages:
+      - The differents realization in Game Development
+      - The differents realization in Game Development
+      Flags: 0000
+      Languages_Touch: []
+    CaseInsensitiveTerms: 0
+    OnMissingTranslation: 1
+    mTerm_AppName: 
+    mLanguages:
+    - Name: English
+      Code: en
+      Flags: 0
+    - Name: French
+      Code: fr
+      Flags: 0
+    IgnoreDeviceLanguage: 1
+    _AllowUnloadingLanguages: 0
+    Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyHX52w1eV6SR0KmjuUzHo31IjY_rK-IM3NwgGeQW1A1y6KFUZRG9VUmiHF_bncQQQ9/exec
+    Google_SpreadsheetKey: 1XY4WZprX3PYBEaobA6i0FSPYsDaWBjeIv74OLrtv_2c
+    Google_SpreadsheetName: I2Loc Portfolio Localization
+    Google_LastUpdatedVersion: 1759030493660
+    Google_Password: Portfolio
+    GoogleUpdateFrequency: 3
+    GoogleInEditorCheckFrequency: 2
+    GoogleUpdateSynchronization: 1
+    GoogleUpdateDelay: 0
+    Assets: []
+    Spreadsheet_LocalFileName: 
+    Spreadsheet_LocalCSVSeparator: ','
+    Spreadsheet_LocalCSVEncoding: utf-8
+    Spreadsheet_SpecializationAsRows: 1
+    Spreadsheet_SortRows: 1

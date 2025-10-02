@@ -137,6 +137,54 @@ MonoBehaviour:
       - Retour
       Flags: 0000
       Languages_Touch: []
+    - Term: Main Menu/Languages
+      TermType: 0
+      Description: 
+      Languages:
+      - Languages
+      - Langues
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/Sound
+      TermType: 0
+      Description: 
+      Languages:
+      - Sound
+      - Son
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/Main Volume
+      TermType: 0
+      Description: 
+      Languages:
+      - Main Volume
+      - Volume Principal
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/Music
+      TermType: 0
+      Description: 
+      Languages:
+      - Music
+      - Musique
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/Effect
+      TermType: 0
+      Description: 
+      Languages:
+      - Effect
+      - Effet
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/Ambiance
+      TermType: 0
+      Description: 
+      Languages:
+      - Ambiance
+      - Ambiance
+      Flags: 0000
+      Languages_Touch: []
     - Term: Model Description/
       TermType: 0
       Description: 
@@ -184,7 +232,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyHX52w1eV6SR0KmjuUzHo31IjY_rK-IM3NwgGeQW1A1y6KFUZRG9VUmiHF_bncQQQ9/exec
     Google_SpreadsheetKey: 1XY4WZprX3PYBEaobA6i0FSPYsDaWBjeIv74OLrtv_2c
     Google_SpreadsheetName: I2Loc Portfolio Localization
-    Google_LastUpdatedVersion: 1759030493660
+    Google_LastUpdatedVersion: 1759426477267
     Google_Password: Portfolio
     GoogleUpdateFrequency: 3
     GoogleInEditorCheckFrequency: 2

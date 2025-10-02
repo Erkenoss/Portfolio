@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Crimson.UI.But
 {
-    [CreateAssetMenu(fileName = "ChangePanel", menuName = "UI/Button/ChangePanel")]
+    [CreateAssetMenu(fileName = "ChangePanel", menuName = "Crimson/UI/Button/ChangePanel")]
     public class ChangePanel : BaseButton
     {
         public override void Execute(GameObject panel)

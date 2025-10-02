@@ -3,7 +3,7 @@ using Crimson.Language;
 
 namespace Crimson.UI.But
 {
-    [CreateAssetMenu(fileName = "ButtonLangauges", menuName = "UI/Button/Languages")]
+    [CreateAssetMenu(fileName = "ButtonLangauges", menuName = "Crimson/UI/Button/Languages")]
     public class LanguageButton : BaseButton
     {
         [Tooltip("languages Defined by this button")]

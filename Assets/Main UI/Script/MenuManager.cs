@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 using Crimson.Singleton;
 
@@ -19,12 +18,6 @@ namespace Portfolio.MainMenu
         #endregion
 
         #region MonoBehaviour Callbacks
-
-        protected override void Awake()
-        {
-            base.Awake();
-        }
-
         #endregion
 
         #region Public Methods
@@ -53,6 +46,20 @@ namespace Portfolio.MainMenu
 
             currentPanel = panel;
             currentPanel.SetActive(true);
+        }
+
+        /// <summary>
+        /// CLose a panel
+        /// </summary>
+        /// <param name="panel"></param>
+        public void CLosedPanel(GameObject panel)
+        {
+            if (panel == null)
+            {
+                return;
+            }
+
+            panel.SetActive(false);
         }
 
         #endregion

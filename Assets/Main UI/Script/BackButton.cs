@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Crimson.Portfolio
 {
-    [CreateAssetMenu(fileName = "Back Button", menuName = "UI/Portfolio/Button/Back Button")]
+    [CreateAssetMenu(fileName = "Back Button", menuName = "Portfolio/Button/Back Button")]
     public class BackButton : BaseButton
     {
         public override void Execute()

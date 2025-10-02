@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Crimson.UI.But
 {
-    [CreateAssetMenu(fileName = "GoURL", menuName = "UI/Button/GoURL")]
+    [CreateAssetMenu(fileName = "GoURL", menuName = "Crimson/UI/Button/GoURL")]
     public class GoURL : BaseButton
     {
         [Tooltip("Url where we want to go")]

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Crimson.Portfolio
 {
-    [CreateAssetMenu(fileName = "Model", menuName = "UI/Portfolio/Model")]
+    [CreateAssetMenu(fileName = "Model", menuName = "Portfolio/Model")]
     public class PortfolioModel : PageModel
     {
         #region Public Fields

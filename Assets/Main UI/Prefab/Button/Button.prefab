@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5207169373111063569}
   - component: {fileID: 2890005195307016679}
   - component: {fileID: 2749065288320606683}
-  - component: {fileID: 8376164725083446217}
   - component: {fileID: 3986554568688662846}
+  - component: {fileID: 5803558207701941010}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -114,24 +114,6 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &8376164725083446217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4951342291553290042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52825713b04b1bc4da618487147c4178, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonListener
-  button: {fileID: 2890005195307016679}
-  action: {fileID: 0}
-  panel: {fileID: 0}
-  hoverTextColor: {r: 1, g: 0.6398343, b: 0, a: 1}
-  baseColor: {r: 1, g: 1, b: 1, a: 1}
-  buttonText: {fileID: 6343577108797254570}
 --- !u!114 &3986554568688662846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,6 +136,27 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 0}
   m_PreserveAspect: 0
+--- !u!114 &5803558207701941010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4951342291553290042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb1f7d4eb4f3d345a4ef5b9a9cf6e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Crimson.Audio.SoundButtonListener
+  button: {fileID: 2890005195307016679}
+  action: {fileID: 0}
+  panel: {fileID: 0}
+  hoverTextColor: {r: 1, g: 0.6392157, b: 0, a: 1}
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  buttonText: {fileID: 6343577108797254570}
+  playClip: {fileID: 11400000, guid: d8dc3f3415378644aa7785d976d507ab, type: 2}
+  clip: {fileID: 8300000, guid: 4d4018de6e2428d409e60198b1dbf35a, type: 3}
+  type: 2
 --- !u!1 &6473558213027248701
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
-using System.Collections.Generic;
 using UnityEngine;
 using Crimson.Singleton;
+using System.Collections.Generic;
+using Crimson.Audio;
 
 namespace Portfolio.MainMenu
 {
@@ -11,6 +12,10 @@ namespace Portfolio.MainMenu
 
         #region Private Fields
 
+        [Tooltip("List of all pannel in the setting menu")]
+        [SerializeField]
+        private List<GameObject> settingPanels = new List<GameObject>();
+
         /// <summary>
         /// Current open panel
         /// </summary>
@@ -20,9 +25,25 @@ namespace Portfolio.MainMenu
 
         #region MonoBehaviour Callbacks
 
-        protected override void Awake()
+        private void Start()
         {
-            base.Awake();
+            if (AudioManager.Instance != null)
+            {
+                AudioSource currentMusicSource = null;
+                currentMusicSource = AudioManager.Instance.GetMusicSource();
+
+                if (currentMusicSource == null)
+                {
+                    return;
+                }
+
+                if (currentMusicSource.isPlaying)
+                {
+                    currentMusicSource.Stop();
+                }
+
+                AudioManager.Instance.EnableMusic();
+            }
         }
 
         #endregion
@@ -53,6 +74,25 @@ namespace Portfolio.MainMenu
 
             currentPanel = panel;
             currentPanel.SetActive(true);
+        }
+
+        /// <summary>
+        /// Use to open or close the different panel in the main setting panel
+        /// </summary>
+        /// <param name="settingPanel"></param>
+        public void OpenCloseSettingPanel(GameObject settingPanel)
+        {
+            if (settingPanel == null || settingPanels == null || settingPanels.Count == 0)
+            {
+                return;
+            }
+
+            foreach (GameObject panel in settingPanels)
+            {
+                panel.SetActive(false);
+            }
+
+            settingPanel.SetActive(true);
         }
 
         #endregion

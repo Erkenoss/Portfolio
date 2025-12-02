@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74d48f6cd1477944bae9612257cd886e, type: 3}
+  m_Name: Music Container
+  m_EditorClassIdentifier: Assembly-CSharp::Crimson.Audio.MusicClipContainer
+  musicList:
+  - {fileID: 8300000, guid: a0951ee61370e5049859fddbfcc211a2, type: 3}
+  - {fileID: 8300000, guid: 9c7605b37ac88ac40b6a1f23e1a0227c, type: 3}
+  - {fileID: 8300000, guid: f9542fa689ec62643b0f9a49d8ce91b1, type: 3}
+  isLooping: 0
+  isRandom: 1

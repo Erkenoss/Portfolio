@@ -22,7 +22,7 @@ MonoBehaviour:
     m_DontLocalizeParameters: 0
   gifSprites: []
   img: {fileID: 0}
-  clip: {fileID: 0}
+  clip: {fileID: 32900000, guid: 200cdf1260d46f8439adf72498a3857e, type: 3}
   audio: {fileID: 0}
   panel: 5
   description:
@@ -31,3 +31,4 @@ MonoBehaviour:
     mRTL_MaxLineLength: 0
     mRTL_ConvertNumbers: 0
     m_DontLocalizeParameters: 0
+  videoList: []

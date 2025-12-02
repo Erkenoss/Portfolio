@@ -3,7 +3,7 @@ using Crimson.UI.But;
 
 namespace Crimson.UI.Pagination
 {
-    [CreateAssetMenu(fileName = "Next/Prev Button", menuName = "UI/Page/Button")]
+    [CreateAssetMenu(fileName = "Next/Prev Button", menuName = "Crimson/UI/Page/Prev_Next Button")]
     public class PrevNext : BaseButton
     {
         [Tooltip("Is this button the prev button?")]

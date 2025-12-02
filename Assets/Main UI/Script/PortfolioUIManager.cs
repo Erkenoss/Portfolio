@@ -1,3 +1,4 @@
+using Crimson.Audio;
 using Crimson.UI.Pagination;
 using System;
 using System.Collections.Generic;
@@ -43,7 +44,7 @@ namespace Crimson.Portfolio
         [Tooltip("GameObject of the panel")]
         [SerializeField]
         private GameObject panel;
-
+        
         #endregion
     }
 
@@ -73,6 +74,10 @@ namespace Crimson.Portfolio
         [SerializeField]
         private RawImage videoImage = null;
 
+        [Tooltip("Structure to defined all component of every panels")]
+        [SerializeField]
+        private List<SectorStruct> sectorList = new List<SectorStruct>();
+
         /// <summary>
         /// Panel currently choose by the player
         /// </summary>
@@ -88,9 +93,15 @@ namespace Crimson.Portfolio
         /// </summary>
         Dictionary<EPanel, SectorStruct> panelDictionary = new Dictionary<EPanel, SectorStruct>();
 
-        [Tooltip("Structure to defined all component of every panels")]
-        [SerializeField]
-        private List<SectorStruct> sectorList = new List<SectorStruct>();
+        /// <summary>
+        /// Current clip of the page
+        /// </summary>
+        private AudioClip currentClip = null;
+
+        /// <summary>
+        /// Index to manage the navigation in the different panel
+        /// </summary>
+        private int subIndex = 0;
 
         #endregion
 
@@ -99,7 +110,7 @@ namespace Crimson.Portfolio
         /// <summary>
         /// Event to notify what happened when we change panel
         /// </summary>
-        public event Action<EPanel> OnChangedPanel = null;
+        public event Action OnChangedPanel = null;
 
         #endregion
 
@@ -114,11 +125,13 @@ namespace Crimson.Portfolio
 
         private void Start()
         {
+            OnChangedPanel += StartPageMusic;
+            
             if (view == null)
             {
                 return;
             }
-
+            
             ChangePanel();
             panel = EPanel.VR;
 
@@ -127,8 +140,18 @@ namespace Crimson.Portfolio
                 return;
             }
 
-            OnChangedPanel?.Invoke(panel);
+            OnChangedPanel?.Invoke();
             AlphaModifier();
+
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.DisableMusic();
+            }
+        }
+
+        protected override void OnDestroy()
+        {
+            OnChangedPanel -= StartPageMusic;
         }
 
         #endregion
@@ -147,7 +170,7 @@ namespace Crimson.Portfolio
             view.UpdateView(containerList[index]);
             panel = containerList[index].Panel;
 
-            OnChangedPanel?.Invoke(panel);
+            OnChangedPanel?.Invoke();
         }
 
         public override void Prev()
@@ -162,7 +185,7 @@ namespace Crimson.Portfolio
             view.UpdateView(containerList[index]);
             panel = containerList[index].Panel;
 
-            OnChangedPanel?.Invoke(panel);
+            OnChangedPanel?.Invoke();
         }
 
         /// <summary>
@@ -182,7 +205,70 @@ namespace Crimson.Portfolio
         public override void SetPanel()
         {
             ChangePanel();
-            OnChangedPanel?.Invoke(panel);
+            OnChangedPanel?.Invoke();
+        }
+
+        /// <summary>
+        /// Open break panel and close the current panel 
+        /// </summary>
+        /// <param name="pausePanel"></param>
+        public override void OpenCloseBreakMenu(GameObject breakPanel)
+        {
+            if (currentPanel == null)
+            {
+                return;
+            }
+
+            currentPanel.SetActive(!currentPanel.activeSelf);
+            breakPanel.SetActive(!breakPanel.activeSelf);
+
+            if (view != null)
+            {
+                if (breakPanel.activeSelf)
+                {
+                    view.UpdateView(null);
+                }
+                else
+                {
+                    view.UpdateView(containerList[index]);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Change the view base on the panel
+        /// </summary>
+        /// <param name="next"></param>
+        /// <param name="panel"></param>
+        public override void SubPanelNavigation(bool prev, EPanel panel)
+        {
+            if (panelDictionary.TryGetValue(panel, out var sector))
+            {
+                if (prev)
+                {
+                    subIndex--;
+                }
+                else
+                {
+                    subIndex++;
+                }
+
+                List<PortfolioModel> list = sector.ModelList;
+
+                if (subIndex < 0)
+                {
+                    subIndex = list.Count - 1;
+                }
+                if (subIndex >= list.Count)
+                {
+                    subIndex = 0;
+                }
+
+                if (view != null)
+                {
+                    view.UpdateView(list[subIndex]);
+                }
+            }
         }
 
         #endregion
@@ -242,6 +328,10 @@ namespace Crimson.Portfolio
 
                 view.UpdateView(containerList[index]);
                 AlphaModifier();
+
+                currentClip = containerList[index].Audio;
+                OnChangedPanel?.Invoke();
+                subIndex = 0;
             }
         }
 
@@ -275,6 +365,19 @@ namespace Crimson.Portfolio
                     videoImage.color = color;
                 }
             }
+        }
+
+        /// <summary>
+        /// Base on panel, start the music page
+        /// </summary>
+        private void StartPageMusic()
+        {
+            if (AudioManager.Instance == null)
+            {
+                return;
+            }
+
+            AudioManager.Instance.Play(EAudio.Music, currentClip, true);
         }
 
         #endregion

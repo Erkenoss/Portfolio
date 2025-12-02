@@ -1,6 +1,8 @@
 using Crimson.Portfolio;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
@@ -47,6 +49,11 @@ namespace Crimson.UI.Pagination
         /// </summary>
         private Coroutine gifCorout = null;
 
+        /// <summary>
+        /// Coroutine to manage the view of the different video in a page
+        /// </summary>
+        private Coroutine videoCoroutine = null;
+
         #endregion
 
         #region MonoBehaviour Callbacks
@@ -72,9 +79,43 @@ namespace Crimson.UI.Pagination
         /// <param name="page"></param>
         public void UpdateView(PortfolioModel page)
         {
+            if (videoCoroutine != null)
+            {
+                StopCoroutine(videoCoroutine);
+                videoCoroutine = null;
+            }
+
             if (page == null || title == null)
             {
+                if (vp != null)
+                {
+                    vp.gameObject.SetActive(false);
+                }
+                if (videoImg != null)
+                {
+                    videoImg.gameObject.SetActive(false);
+                }
+                if (bubble != null)
+                {
+                    bubble.gameObject.SetActive(false);
+                }
+
                 return;
+            }
+            else
+            {
+                if (vp != null && !vp.gameObject.activeSelf)
+                {
+                    vp.gameObject.SetActive(true);
+                }
+                if (videoImg != null && !videoImg.gameObject.activeSelf)
+                {
+                    videoImg.gameObject.SetActive(true);
+                }
+                if (bubble != null)
+                {
+                    bubble.gameObject.SetActive(true);
+                }
             }
 
             if (bubble != null)
@@ -119,10 +160,20 @@ namespace Crimson.UI.Pagination
 
                 videoImg.gameObject.SetActive(true);
 
-                if (page.Clip != null)
+                if (page.VideoList != null && page.VideoList.Count > 0)
                 {
-                    vp.clip = page.Clip;
+                    if (videoCoroutine != null)
+                    {
+                        StopCoroutine(videoCoroutine);
+                        videoCoroutine = null;
+                    }
+
+                    videoCoroutine = StartCoroutine(VideoCoroutine(page.VideoList));
+                }
+                else if (page.Clip != null)
+                {
                     vp.isLooping = true;
+                    vp.clip = page.Clip;
                     vp.Play();
                 }
                 else
@@ -157,6 +208,40 @@ namespace Crimson.UI.Pagination
                 currentImg.sprite = sprites[index];
                 index = (index + 1) % sprites.Length;
                 yield return new WaitForSeconds(1f / fps);
+            }
+        }
+
+        /// <summary>
+        /// Use to set the loop on all the video of the current page
+        /// </summary>
+        /// <param name="list"></param>
+        /// <returns></returns>
+        private IEnumerator VideoCoroutine(List<VideoClip> clips)
+        {
+            if (clips == null || clips.Count == 0)
+            {
+                yield break;
+            }
+
+            int index = 0;
+            while (true)
+            {
+                vp.clip = clips[index];
+                vp.isLooping = false;
+
+                vp.Prepare();
+                while (!vp.isPrepared)
+                {
+                    yield return null;
+                }
+
+                vp.Play();
+                while (vp.isPlaying)
+                {
+                    yield return null;
+                }
+
+                index = (index + 1) % clips.Count;
             }
         }
 

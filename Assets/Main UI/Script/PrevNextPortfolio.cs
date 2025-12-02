@@ -4,7 +4,7 @@ using Crimson.UI;
 
 namespace Crimson.Portfolio
 {
-    [CreateAssetMenu(fileName = "Next/Prev Button", menuName = "UI/Portfolio/Button/PrevNext")]
+    [CreateAssetMenu(fileName = "Next/Prev Button", menuName = "Portfolio/Button/PrevNext")]
     public class PrevNextPortfolio : PrevNext
     {
         #region Public Fields

@@ -4,7 +4,7 @@ using UnityEngine.Video;
 
 namespace Crimson.UI.Pagination
 {
-    [CreateAssetMenu(fileName = "Model", menuName = "UI/Page/Model")]
+    [CreateAssetMenu(fileName = "Model", menuName = "Crimson/UI/Page/Model")]
     public class PageModel : ScriptableObject
     {
         #region Public Fields
@@ -19,7 +19,7 @@ namespace Crimson.UI.Pagination
 
         #endregion
 
-            #region Private Fields
+        #region Private Fields
 
         [Tooltip("Is this model contains a gif?")]
         [SerializeField]

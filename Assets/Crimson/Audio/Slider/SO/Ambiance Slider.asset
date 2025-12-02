@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e57ec541ca27b7242b60449c5e377b9d, type: 3}
   m_Name: Ambiance Slider
   m_EditorClassIdentifier: Assembly-CSharp::Crimson.Audio.SliderSetSound
-  type: 4
+  type: 5
   isLinearSlider: 0

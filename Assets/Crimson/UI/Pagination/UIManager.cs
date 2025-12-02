@@ -1,3 +1,4 @@
+using Crimson.Portfolio;
 using Crimson.Singleton;
 using System.Collections.Generic;
 using UnityEngine;
@@ -113,6 +114,20 @@ namespace Crimson.UI.Pagination
         /// use to back regardless different menu
         /// </summary>
         public virtual void Back()
+        {
+
+        }
+
+        /// <summary>
+        /// Open the break panel and close the current
+        /// </summary>
+        /// <param name="breakPanel"></param>
+        public virtual void OpenCloseBreakMenu(GameObject breakPanel)
+        {
+
+        }
+
+        public virtual void SubPanelNavigation(bool prev, EPanel panel)
         {
 
         }

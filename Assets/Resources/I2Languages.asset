@@ -129,6 +129,14 @@ MonoBehaviour:
       - Autre
       Flags: 0000
       Languages_Touch: []
+    - Term: Main Menu/Script
+      TermType: 0
+      Description: 
+      Languages:
+      - Script
+      - Script
+      Flags: 0000
+      Languages_Touch: []
     - Term: Main Menu/Back
       TermType: 0
       Description: 
@@ -157,8 +165,8 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - Main Volume
-      - Volume Principal
+      - Global
+      - Global
       Flags: 0000
       Languages_Touch: []
     - Term: Main Menu/Music
@@ -183,6 +191,62 @@ MonoBehaviour:
       Languages:
       - Ambiance
       - Ambiance
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/Back Main Menu
+      TermType: 0
+      Description: 
+      Languages:
+      - Main Menu
+      - Menu Principal
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/Pause Button
+      TermType: 0
+      Description: 
+      Languages:
+      - Break
+      - Pause
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/Vices
+      TermType: 0
+      Description: 
+      Languages:
+      - VICES Project
+      - Projet VICES
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/Carrist
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Carrist Work Immersion '
+      - "Immersion M\xE9tier Carriste"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/QC
+      TermType: 0
+      Description: 
+      Languages:
+      - Quality Controller Work Immersion
+      - "Immersion M\xE9tier Controlleur Qualit\xE9"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/Home Helper
+      TermType: 0
+      Description: 
+      Languages:
+      - Home Helper Work Immersion
+      - "Immersion M\xE9tier Aide \xE0 Domicile"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Main Menu/Aidette
+      TermType: 0
+      Description: 
+      Languages:
+      - Aidette Application
+      - Application Aidette
       Flags: 0000
       Languages_Touch: []
     - Term: Model Description/
@@ -217,6 +281,125 @@ MonoBehaviour:
       - The differents realization in Game Development
       Flags: 0000
       Languages_Touch: []
+    - Term: Model Description/VICES
+      TermType: 0
+      Description: 
+      Languages:
+      - 3D Project with ambition to create a new type of tactical RPG Game. It is
+        the very begening of the development. It will be a Dark Fantasy world where
+        the player is incarnated in a chaos creature and where every choice and moment
+        of the life of the player will change the timeline and the end of the game.
+      - "Projet 3D ambitieux visant \xE0 cr\xE9er un nouveau type de jeu de r\xF4le
+        tactique. Il s'agit du tout d\xE9but du d\xE9veloppement. Ce sera un monde
+        de dark fantasy o\xF9 le joueur incarnera une cr\xE9ature du chaos et o\xF9
+        chaque choix et chaque instant de sa vie modifiera le cours du temps et la
+        fin du jeu."
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Model Description/Carrist
+      TermType: 0
+      Description: 
+      Languages:
+      - Work Immersion where the player learned the different manipulation to drive
+        a Forklift in VR. This project is drive by TheRed Universe studio. I am a
+        part of this project by modify the movement of the fork and add differents
+        songs on the Forklift as fork, motor, back beep... Etc. it was my true first
+        experience in the VR and development field. As a first work studie the best
+        challenge was the movement of the fork in three time because a fork on a
+        forklift has three part. In the same time, always for TheRed Universe, I
+        have works on a Tutorial System.
+      - "Exp\xE9rience immersive en r\xE9alit\xE9 virtuelle o\xF9 le joueur apprenait
+        \xE0 manipuler un chariot \xE9l\xE9vateur. Ce projet est d\xE9velopp\xE9
+        par le studio TheRed Universe. J'y ai contribu\xE9 en modifiant le mouvement
+        de la fourche et en ajoutant diff\xE9rentes musiques pour le chariot \xE9l\xE9vateur
+        (fourche, moteur, bip arri\xE8re, etc.). C'\xE9tait ma toute premi\xE8re
+        exp\xE9rience en r\xE9alit\xE9 virtuelle et en d\xE9veloppement. Pour un
+        premier projet, le plus grand d\xE9fi a \xE9t\xE9 de mod\xE9liser le mouvement
+        de la fourche en trois temps, car une fourche de chariot \xE9l\xE9vateur
+        est compos\xE9e de trois parties. Parall\xE8lement, j'ai toujours travaill\xE9
+        pour TheRed Universe sur un syst\xE8me de tutoriels."
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Model Description/QC
+      TermType: 0
+      Description: 
+      Languages:
+      - Work immersion where the player learned how to test differents pieces in
+        a factory in VR. This project is drive by TheRed Universe studio. I have
+        a part of this project by create the base of a new system base on the Guardian
+        in the VR helmet. This feature create a new box of the guardian, a new mesh
+        for a technical people and use it the keep the player in the guardian to
+        create a way accross all the immersion where the player can walk IRL and
+        connect differents points defined the way where the player need to go in
+        the VR environment. It was my second work studies. The best challenge was
+        to create all this base of the feature base on nothing. Need to discovered
+        everything without knowlledge or experience in the field for finally find
+        a solution.
+      - "Exp\xE9rience professionnelle immersive o\xF9 le joueur apprenait \xE0 tester
+        diff\xE9rentes pi\xE8ces dans une usine en r\xE9alit\xE9 virtuelle. Ce projet
+        est men\xE9 par le studio TheRed Universe. J'y ai contribu\xE9 en cr\xE9ant
+        la base d'un nouveau syst\xE8me bas\xE9 sur le Guardian dans le casque VR.
+        Cette fonctionnalit\xE9 a permis de cr\xE9er une nouvelle enveloppe pour
+        le Guardian, un nouveau maillage pour les techniciens, et de l'utiliser pour
+        maintenir le joueur \xE0 l'int\xE9rieur du Guardian afin de cr\xE9er un parcours
+        \xE0 travers l'environnement immersif. Le joueur peut ainsi se d\xE9placer
+        dans le monde r\xE9el et relier diff\xE9rents points d\xE9finissant son itin\xE9raire
+        dans l'environnement VR. Il s'agissait de mon deuxi\xE8me stage."
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Model Description/Home Helper
+      TermType: 0
+      Description: 
+      Languages:
+      - Work Immersion where the player learned how to care about a old person in
+        VR. This project is drive by TheRed Universe studio. I have a part of this
+        project by implemented the movement of the environement as drawer, door for
+        exemple. Thus, the player need to give a glass of water with a pill to the
+        old character. I have create this part of the immersion by create a new shader
+        in the glass and create the system of fill and unfill it. The best challenge
+        here was to learned how, in a VR environment, the environment need to move.
+        So, if I can create every system with time and code, learn every component
+        in Unity to create true movement base on the grab was a challenge. By the
+        way, create a shader we can re use on every container was incredible.
+      - "Immersion professionnelle en r\xE9alit\xE9 virtuelle o\xF9 le joueur apprend
+        \xE0 prendre soin d'une personne \xE2g\xE9e. Ce projet est d\xE9velopp\xE9
+        par le studio TheRed Universe. J'ai contribu\xE9 \xE0 ce projet en impl\xE9mentant
+        les mouvements de l'environnement, comme l'ouverture et la fermeture de tiroirs
+        et de portes. Le joueur doit ainsi donner un verre d'eau contenant un comprim\xE9
+        au personnage \xE2g\xE9. J'ai cr\xE9\xE9 cette partie de l'immersion en d\xE9veloppant
+        un nouveau shader pour le verre et en impl\xE9mentant un syst\xE8me de remplissage
+        et de vidage."
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Model Description/Aidette
+      TermType: 0
+      Description: 
+      Languages:
+      - Aidette project is an mobile application create by Aidette. The project is
+        technicaly drive by the boss of TheRed universes studio. This project is
+        on mobile connected with watch connect. It was a way to help different people
+        with different neuro handicap to help they with motricity, memory and some
+        other exercice. The project compile Unity, Android and Java Languages. I
+        have create a sort system in the application to sort everything in the application
+        on the mobile, test the watch to check where we can preserve some battery
+        and optimise my code with OSA use to optimise scroll view. By the way, at
+        the end of this work study, the last in fact, I have reworked the database
+        system of the application and using Firebase with, obviously, async script.
+        In the same time, I created the basis of a tool to update watches remotely.
+      - "Le projet Aidette est une application mobile cr\xE9\xE9e par Aidette. Techniquement,
+        il est pilot\xE9 par le responsable du studio TheRed Universes. Cette application
+        mobile, connect\xE9e \xE0 une montre connect\xE9e, vise \xE0 aider les personnes
+        souffrant de diff\xE9rents handicaps neurologiques \xE0 am\xE9liorer leur
+        motricit\xE9, leur m\xE9moire et \xE0 r\xE9aliser d'autres exercices. Le
+        projet utilise Unity, Android et Java. J'ai cr\xE9\xE9 un syst\xE8me de tri
+        pour organiser le contenu de l'application sur mobile, test\xE9 la montre
+        pour optimiser l'autonomie et optimis\xE9 le code avec OSA pour am\xE9liorer
+        la fluidit\xE9 du d\xE9filement. Enfin, \xE0 la fin de ce projet, j'ai enti\xE8rement
+        refondu le syst\xE8me de base de donn\xE9es de l'application en utilisant
+        Firebase avec des scripts asynchrones. J'ai \xE9galement cr\xE9\xE9 les bases
+        d'un outil de mise \xE0 jour \xE0 distance des montres."
+      Flags: 0000
+      Languages_Touch: []
     CaseInsensitiveTerms: 0
     OnMissingTranslation: 1
     mTerm_AppName: 
@@ -232,7 +415,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyHX52w1eV6SR0KmjuUzHo31IjY_rK-IM3NwgGeQW1A1y6KFUZRG9VUmiHF_bncQQQ9/exec
     Google_SpreadsheetKey: 1XY4WZprX3PYBEaobA6i0FSPYsDaWBjeIv74OLrtv_2c
     Google_SpreadsheetName: I2Loc Portfolio Localization
-    Google_LastUpdatedVersion: 1759426477267
+    Google_LastUpdatedVersion: 1762273719389
     Google_Password: Portfolio
     GoogleUpdateFrequency: 3
     GoogleInEditorCheckFrequency: 2

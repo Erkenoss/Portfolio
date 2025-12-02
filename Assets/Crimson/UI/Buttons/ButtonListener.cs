@@ -1,4 +1,4 @@
-using System;
+using Crimson.Audio;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -15,8 +15,7 @@ namespace Crimson.UI.But
         #region Private Fields
 
         [Tooltip("The button on thiss script")]
-        [SerializeField]
-        private Button button = null;
+        public Button button = null;
 
         [Tooltip("The action use by this button")]
         [SerializeField]
@@ -47,7 +46,7 @@ namespace Crimson.UI.But
 
         #region MonoBehaviour Callbacks
 
-        private void Start()
+        protected virtual void Start()
         {
             if (button == null || action == null)
             {
@@ -65,7 +64,7 @@ namespace Crimson.UI.But
             }
         }
 
-        private void OnDisable()
+        protected virtual void OnDisable()
         {
             if (buttonText == null)
             {
@@ -75,7 +74,7 @@ namespace Crimson.UI.But
             buttonText.color = baseColor;
         }
 
-        private void OnDestroy()
+        protected virtual void OnDestroy()
         {
             if (button == null || action == null)
             {
@@ -93,7 +92,7 @@ namespace Crimson.UI.But
             }
         }
 
-        public void OnPointerEnter(PointerEventData eventData)
+        public virtual void OnPointerEnter(PointerEventData eventData)
         {
             if (buttonText == null)
             {
@@ -103,7 +102,7 @@ namespace Crimson.UI.But
             buttonText.color = hoverTextColor;
         }
 
-        public void OnPointerExit(PointerEventData eventData)
+        public virtual void OnPointerExit(PointerEventData eventData)
         {
             if (buttonText == null)
             {

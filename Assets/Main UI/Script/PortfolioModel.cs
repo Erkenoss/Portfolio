@@ -1,6 +1,8 @@
 using Crimson.UI.Pagination;
 using I2.Loc;
 using UnityEngine;
+using UnityEngine.Video;
+using System.Collections.Generic;
 
 namespace Crimson.Portfolio
 {
@@ -11,6 +13,7 @@ namespace Crimson.Portfolio
 
         public EPanel Panel { get { return panel; } }
         public LocalizedString Description { get { return description; } }
+        public List<VideoClip> VideoList { get { return videoList; } }
 
         #endregion
 
@@ -23,6 +26,10 @@ namespace Crimson.Portfolio
         [Tooltip("Description I2 loc key of the model")]
         [SerializeField]
         private LocalizedString description = null;
+
+        [Tooltip("All video of this page")]
+        [SerializeField]
+        private List<VideoClip> videoList = new List<VideoClip>();
 
         #endregion
 

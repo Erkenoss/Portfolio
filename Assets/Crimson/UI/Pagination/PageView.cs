@@ -168,12 +168,23 @@ namespace Crimson.UI.Pagination
                         videoCoroutine = null;
                     }
 
-                    videoCoroutine = StartCoroutine(VideoCoroutine(page.VideoList));
+                    videoCoroutine = StartCoroutine(VideoCoroutine(page.VideoList, page.IsWebmVideo));
                 }
-                else if (page.Clip != null)
+                else if (!string.IsNullOrEmpty(page.Clip.ToString()))
                 {
+                    string path = string.Empty;
+                    if (page.IsWebmVideo)
+                    {
+                        path = VideoPath.GetPath(page.Clip.ToString() + ".webm");
+                    }
+                    else
+                    {
+                        path = VideoPath.GetPath(page.Clip.ToString() + ".mp4");
+                    }
+
+                    vp.source = VideoSource.Url;
+                    vp.url = path;
                     vp.isLooping = true;
-                    vp.clip = page.Clip;
                     vp.Play();
                 }
                 else
@@ -216,9 +227,9 @@ namespace Crimson.UI.Pagination
         /// </summary>
         /// <param name="list"></param>
         /// <returns></returns>
-        private IEnumerator VideoCoroutine(List<VideoClip> clips)
+        private IEnumerator VideoCoroutine(List<VideoName> videoFiles, bool webm)
         {
-            if (clips == null || clips.Count == 0)
+            if (videoFiles == null || videoFiles.Count == 0)
             {
                 yield break;
             }
@@ -226,8 +237,18 @@ namespace Crimson.UI.Pagination
             int index = 0;
             while (true)
             {
-                vp.clip = clips[index];
-                vp.isLooping = false;
+                string path = string.Empty;
+                if (webm)
+                {
+                    path = VideoPath.GetPath(videoFiles[index].ToString() + ".webm");
+                }
+                else
+                {
+                    path = VideoPath.GetPath(videoFiles[index].ToString() + ".mp4");
+                }
+
+                vp.source = VideoSource.Url;
+                vp.url = path;
 
                 vp.Prepare();
                 while (!vp.isPrepared)
@@ -241,7 +262,7 @@ namespace Crimson.UI.Pagination
                     yield return null;
                 }
 
-                index = (index + 1) % clips.Count;
+                index = (index + 1) % videoFiles.Count;
             }
         }
 

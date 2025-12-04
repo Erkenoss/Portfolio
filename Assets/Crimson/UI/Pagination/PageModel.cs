@@ -1,6 +1,6 @@
+using Crimson.Portfolio;
 using I2.Loc;
 using UnityEngine;
-using UnityEngine.Video;
 
 namespace Crimson.UI.Pagination
 {
@@ -9,17 +9,22 @@ namespace Crimson.UI.Pagination
     {
         #region Public Fields
 
+        public bool IsWebmVideo { get {  return isWebmVideo; } }
         public bool IsGif { get {  return isGif; } }
         public bool IsVideo { get {  return isVideo; } }
         public LocalizedString Key { get { return key; } }
         public Sprite[] GifSprites { get { return gifSprites; } }
         public Sprite Img { get { return img; } }
-        public VideoClip Clip { get { return clip; } }
+        public VideoName Clip { get { return clip; } }
         public AudioClip Audio { get { return audio; } }
 
         #endregion
 
         #region Private Fields
+
+        [Tooltip("Is this video with webm extention?")]
+        [SerializeField]
+        private bool isWebmVideo = true;
 
         [Tooltip("Is this model contains a gif?")]
         [SerializeField]
@@ -43,7 +48,7 @@ namespace Crimson.UI.Pagination
 
         [Tooltip("Video of the model is there is one")]
         [SerializeField]
-        private VideoClip clip = null;
+        private VideoName clip = VideoName.None;
 
         [Tooltip("Audio of the panel")]
         [SerializeField]

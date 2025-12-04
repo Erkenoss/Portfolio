@@ -1,3 +1,4 @@
+using Crimson.Audio;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -35,6 +36,20 @@ namespace Crimson.UI
         #endregion
 
         #region Public Methods
+
+        /// <summary>
+        /// Set the sound base on the slider value
+        /// </summary>
+        public void SetSound()
+        {
+            if (action == null)
+            {
+                return;
+            }
+
+            action.Execute(slider.value);
+        }
+
         #endregion
 
         #region Private Methods

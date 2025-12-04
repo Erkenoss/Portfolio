@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d73918a968c26034684ce2972dce7dd9, type: 3}
   m_Name: VR Page
   m_EditorClassIdentifier: Assembly-CSharp::Crimson.Portfolio.PortfolioModel
+  isWebmVideo: 0
   isGif: 0
   isVideo: 1
   key:
@@ -22,7 +23,7 @@ MonoBehaviour:
     m_DontLocalizeParameters: 0
   gifSprites: []
   img: {fileID: 0}
-  clip: {fileID: 32900000, guid: a669cbb96cf1823418b4caa7eea94c3a, type: 3}
+  clip: 10
   audio: {fileID: 0}
   panel: 2
   description:
@@ -31,4 +32,4 @@ MonoBehaviour:
     mRTL_MaxLineLength: 0
     mRTL_ConvertNumbers: 0
     m_DontLocalizeParameters: 0
-  videoList: []
+  videoList: 

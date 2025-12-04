@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5207169373111063569}
   - component: {fileID: 2890005195307016679}
   - component: {fileID: 2749065288320606683}
-  - component: {fileID: 3986554568688662846}
   - component: {fileID: 5803558207701941010}
+  - component: {fileID: 8650201437541751469}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -33,7 +33,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8328209291453803779}
   - {fileID: 8979190129017339472}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -90,7 +89,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 3986554568688662846}
+  m_TargetGraphic: {fileID: 8650201437541751469}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -114,28 +113,6 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &3986554568688662846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4951342291553290042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef8b96895a0ec4ba685178a052544251, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.VectorGraphics::Unity.VectorGraphics.SVGImage
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_PreserveAspect: 0
 --- !u!114 &5803558207701941010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,6 +134,36 @@ MonoBehaviour:
   playClip: {fileID: 11400000, guid: d8dc3f3415378644aa7785d976d507ab, type: 2}
   clip: {fileID: 8300000, guid: 4d4018de6e2428d409e60198b1dbf35a, type: 3}
   type: 2
+--- !u!114 &8650201437541751469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4951342291553290042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 862dca09c8888564e85b5f3b1a3a5eae, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &6473558213027248701
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,65 +340,3 @@ MonoBehaviour:
   mGUI_ShowCallback: 0
   mLocalizeTarget: {fileID: 0}
   mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
---- !u!1001 &9221903290952188628
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 8121749145847900752}
-    m_Modifications:
-    - target: {fileID: 894375842736517079, guid: acaa63f57be2983489432994bb43d17d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 894375842736517079, guid: acaa63f57be2983489432994bb43d17d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 894375842736517079, guid: acaa63f57be2983489432994bb43d17d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 894375842736517079, guid: acaa63f57be2983489432994bb43d17d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 894375842736517079, guid: acaa63f57be2983489432994bb43d17d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 894375842736517079, guid: acaa63f57be2983489432994bb43d17d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 894375842736517079, guid: acaa63f57be2983489432994bb43d17d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 894375842736517079, guid: acaa63f57be2983489432994bb43d17d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 894375842736517079, guid: acaa63f57be2983489432994bb43d17d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 894375842736517079, guid: acaa63f57be2983489432994bb43d17d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8950557352321514354, guid: acaa63f57be2983489432994bb43d17d, type: 3}
-      propertyPath: m_Name
-      value: UI Button Design
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: acaa63f57be2983489432994bb43d17d, type: 3}
---- !u!4 &8328209291453803779 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 894375842736517079, guid: acaa63f57be2983489432994bb43d17d, type: 3}
-  m_PrefabInstance: {fileID: 9221903290952188628}
-  m_PrefabAsset: {fileID: 0}

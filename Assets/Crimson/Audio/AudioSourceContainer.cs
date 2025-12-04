@@ -9,10 +9,11 @@ namespace Crimson.Audio
 
         public EAudio Type { get { return type; } }
         public AudioSource Source {  get { return source; } set { source = value; } }
+        public float Volume { get { return  volume; } set { volume = value; } }
 
         #endregion
 
-        #region Private Fields
+            #region Private Fields
 
         [Tooltip("Type of the audio source")]
         [SerializeField]
@@ -21,6 +22,11 @@ namespace Crimson.Audio
         [Tooltip("Source we want to add in the manager base on it's type")]
         [SerializeField]
         private AudioSource source = null;
+
+        [Tooltip("Volume of this audio source")]
+        [SerializeField]
+        [Range(-80f, 20f)]
+        private float volume = 0.0f;
 
         #endregion
 

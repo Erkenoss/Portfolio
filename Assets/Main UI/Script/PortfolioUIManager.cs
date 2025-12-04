@@ -17,6 +17,21 @@ namespace Crimson.Portfolio
         Others
     }
 
+    public enum VideoName
+    {
+        None,
+        carrist_sound_fork_movement,
+        vice_project_first_video,
+        home_helper_door_drawer_bathroom,
+        home_helper_shader_glass,
+        home_helper_get_pill,
+        home_helper_door_drawer_kitchen,
+        psychotonomia_filter_by_name,
+        guardian_creation,
+        guardian_movement,
+        All_VR_Videos
+    }
+
     /// <summary>
     /// Structure to design every panel of the portfolio
     /// </summary>

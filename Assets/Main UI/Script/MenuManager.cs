@@ -2,6 +2,7 @@ using UnityEngine;
 using Crimson.Singleton;
 using System.Collections.Generic;
 using Crimson.Audio;
+using Crimson.UI;
 
 namespace Portfolio.MainMenu
 {
@@ -15,6 +16,10 @@ namespace Portfolio.MainMenu
         [Tooltip("List of all pannel in the setting menu")]
         [SerializeField]
         private List<GameObject> settingPanels = new List<GameObject>();
+
+        [Tooltip("List of all sound slider in the scene")]
+        [SerializeField]
+        private List<SliderListener> soundSliderList = new List<SliderListener>();
 
         /// <summary>
         /// Current open panel
@@ -44,6 +49,8 @@ namespace Portfolio.MainMenu
 
                 AudioManager.Instance.EnableMusic();
             }
+
+            InitSound();
         }
 
         #endregion
@@ -98,6 +105,23 @@ namespace Portfolio.MainMenu
         #endregion
 
         #region Private Methods
+
+        /// <summary>
+        /// init the sound in the scene
+        /// </summary>
+        private void InitSound()
+        {
+            if (AudioManager.Instance == null || soundSliderList == null || soundSliderList.Count == 0)
+            {
+                return;
+            }
+
+            foreach (SliderListener slider in soundSliderList)
+            {
+                slider.SetSound();
+            }
+        }
+
         #endregion
     }
 }

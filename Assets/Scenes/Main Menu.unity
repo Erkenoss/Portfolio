@@ -290,6 +290,10 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 6343577108797254570, guid: 87fdad3997d656049be232be18b67698, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8121749145847900752, guid: 87fdad3997d656049be232be18b67698, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -378,6 +382,10 @@ PrefabInstance:
       propertyPath: mLocalizeTarget
       value: 
       objectReference: {fileID: 298985755}
+    - target: {fileID: 8650201437541751469, guid: 87fdad3997d656049be232be18b67698, type: 3}
+      propertyPath: m_Color.a
+      value: 0.11764706
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -535,6 +543,10 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 6343577108797254570, guid: 87fdad3997d656049be232be18b67698, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8121749145847900752, guid: 87fdad3997d656049be232be18b67698, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -623,6 +635,10 @@ PrefabInstance:
       propertyPath: mLocalizeTarget
       value: 
       objectReference: {fileID: 918439718}
+    - target: {fileID: 8650201437541751469, guid: 87fdad3997d656049be232be18b67698, type: 3}
+      propertyPath: m_Color.a
+      value: 0.11764706
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1061,8 +1077,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 959.99994, y: -544.6332}
-  m_SizeDelta: {x: 1855.9999, y: 705.2663}
+  m_AnchoredPosition: {x: 959.99994, y: -573.1383}
+  m_SizeDelta: {x: 1855.9999, y: 762.27655}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &214765654
 MonoBehaviour:
@@ -1134,8 +1150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::I2.Loc.LocalizeTarget_TextMeshPro_UGUI
   mTarget: {fileID: 67989490}
-  mAlignment_RTL: 513
-  mAlignment_LTR: 516
+  mAlignment_RTL: 514
+  mAlignment_LTR: 514
   mAlignmentWasRTL: 0
   mInitializeAlignment: 0
 --- !u!1 &330585543
@@ -2060,7 +2076,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 183, y: -374.58438}
+  m_AnchoredPosition: {x: 183, y: -381.13828}
   m_SizeDelta: {x: 366, y: 522}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &427509538
@@ -2349,7 +2365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8121749145847900752, guid: 87fdad3997d656049be232be18b67698, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -352.63315
+      value: -381.13828
       objectReference: {fileID: 0}
     - target: {fileID: 8121749145847900752, guid: 87fdad3997d656049be232be18b67698, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2457,7 +2473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481ab606793a67349be805c13febeba0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::I2.Loc.LocalizeTarget_TextMeshPro_UGUI
-  mTarget: {fileID: 1732663513}
+  mTarget: {fileID: 1374115305}
   mAlignment_RTL: 514
   mAlignment_LTR: 514
   mAlignmentWasRTL: 0
@@ -2984,8 +3000,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1359.9999, y: -352.63315}
-  m_SizeDelta: {x: 960, y: 705.2663}
+  m_AnchoredPosition: {x: 1359.9999, y: -381.13828}
+  m_SizeDelta: {x: 960, y: 762.27655}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &872999330
 MonoBehaviour:
@@ -3113,8 +3129,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::I2.Loc.LocalizeTarget_TextMeshPro_UGUI
   mTarget: {fileID: 144047067}
-  mAlignment_RTL: 513
-  mAlignment_LTR: 516
+  mAlignment_RTL: 514
+  mAlignment_LTR: 514
   mAlignmentWasRTL: 0
   mInitializeAlignment: 0
 --- !u!1 &940245691
@@ -3787,7 +3803,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 691, y: -374.58438}
+  m_AnchoredPosition: {x: 691, y: -381.13828}
   m_SizeDelta: {x: 522, y: 522}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1101943613
@@ -4234,7 +4250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8121749145847900752, guid: 87fdad3997d656049be232be18b67698, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -160.63315
+      value: -189.13828
       objectReference: {fileID: 0}
     - target: {fileID: 8121749145847900752, guid: 87fdad3997d656049be232be18b67698, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4484,7 +4500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8121749145847900752, guid: 87fdad3997d656049be232be18b67698, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -544.6332
+      value: -573.1383
       objectReference: {fileID: 0}
     - target: {fileID: 8121749145847900752, guid: 87fdad3997d656049be232be18b67698, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5599,8 +5615,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 439.99994, y: -352.63315}
-  m_SizeDelta: {x: 847.9999, y: 705.2663}
+  m_AnchoredPosition: {x: 439.99994, y: -381.13828}
+  m_SizeDelta: {x: 847.9999, y: 762.27655}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2036351771
 MonoBehaviour:
@@ -5782,8 +5798,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::I2.Loc.LocalizeTarget_TextMeshPro_UGUI
   mTarget: {fileID: 2132145818}
-  mAlignment_RTL: 513
-  mAlignment_LTR: 516
+  mAlignment_RTL: 514
+  mAlignment_LTR: 514
   mAlignmentWasRTL: 0
   mInitializeAlignment: 0
 --- !u!1001 &2132145816
@@ -5825,6 +5841,10 @@ PrefabInstance:
     - target: {fileID: 6343577108797254570, guid: 87fdad3997d656049be232be18b67698, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343577108797254570, guid: 87fdad3997d656049be232be18b67698, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8121749145847900752, guid: 87fdad3997d656049be232be18b67698, type: 3}
       propertyPath: m_Pivot.x
@@ -5914,6 +5934,10 @@ PrefabInstance:
       propertyPath: mLocalizeTarget
       value: 
       objectReference: {fileID: 2127537726}
+    - target: {fileID: 8650201437541751469, guid: 87fdad3997d656049be232be18b67698, type: 3}
+      propertyPath: m_Color.a
+      value: 0.11764706
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

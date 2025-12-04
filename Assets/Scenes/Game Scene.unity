@@ -493,8 +493,8 @@ GameObject:
   - component: {fileID: 99820994}
   - component: {fileID: 99820993}
   - component: {fileID: 99820992}
-  - component: {fileID: 99820995}
   - component: {fileID: 99820996}
+  - component: {fileID: 99820997}
   m_Layer: 5
   m_Name: Return Button
   m_TagString: Untagged
@@ -594,24 +594,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 99820989}
   m_CullTransparentMesh: 1
---- !u!114 &99820995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99820989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52825713b04b1bc4da618487147c4178, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Crimson.UI.But.ButtonListener
-  button: {fileID: 99820993}
-  action: {fileID: 11400000, guid: 0d5f4832392f9534a939671f83077436, type: 2}
-  panel: {fileID: 0}
-  hoverTextColor: {r: 1, g: 0.6392157, b: 0, a: 1}
-  baseColor: {r: 1, g: 1, b: 1, a: 1}
-  buttonText: {fileID: 69598596}
 --- !u!114 &99820996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -642,6 +624,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &99820997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99820989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb1f7d4eb4f3d345a4ef5b9a9cf6e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Crimson.Audio.SoundButtonListener
+  button: {fileID: 99820993}
+  action: {fileID: 11400000, guid: 0d5f4832392f9534a939671f83077436, type: 2}
+  panel: {fileID: 0}
+  hoverTextColor: {r: 1, g: 0.6392157, b: 0, a: 1}
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  buttonText: {fileID: 69598596}
+  playClip: {fileID: 11400000, guid: d8dc3f3415378644aa7785d976d507ab, type: 2}
+  clip: {fileID: 8300000, guid: 1217fccba35eb9e4fa0681ba5ae8fe91, type: 3}
+  type: 2
 --- !u!1 &168980420
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,6 +966,7 @@ GameObject:
   - component: {fileID: 384381079}
   - component: {fileID: 384381078}
   - component: {fileID: 384381082}
+  - component: {fileID: 384381083}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -1109,6 +1113,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &384381083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384381075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb1f7d4eb4f3d345a4ef5b9a9cf6e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Crimson.Audio.SoundButtonListener
+  button: {fileID: 0}
+  action: {fileID: 0}
+  panel: {fileID: 0}
+  hoverTextColor: {r: 1, g: 1, b: 1, a: 1}
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  buttonText: {fileID: 0}
+  playClip: {fileID: 0}
+  clip: {fileID: 0}
+  type: 0
 --- !u!1 &393650418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,8 +1288,8 @@ GameObject:
   - component: {fileID: 394125678}
   - component: {fileID: 394125677}
   - component: {fileID: 394125676}
-  - component: {fileID: 394125679}
   - component: {fileID: 394125680}
+  - component: {fileID: 394125681}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -1286,10 +1311,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 793848026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 496, y: -48}
-  m_SizeDelta: {x: 96, y: 32}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &394125676
 MonoBehaviour:
@@ -1351,7 +1376,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 394125680}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -1363,24 +1388,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394125673}
   m_CullTransparentMesh: 1
---- !u!114 &394125679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 394125673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52825713b04b1bc4da618487147c4178, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Crimson.UI.But.ButtonListener
-  button: {fileID: 394125677}
-  action: {fileID: 11400000, guid: eb36e970fac5abd43bf97bacc0764582, type: 2}
-  panel: {fileID: 0}
-  hoverTextColor: {r: 1, g: 1, b: 1, a: 1}
-  baseColor: {r: 1, g: 1, b: 1, a: 1}
-  buttonText: {fileID: 0}
 --- !u!114 &394125680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1411,6 +1418,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &394125681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394125673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb1f7d4eb4f3d345a4ef5b9a9cf6e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Crimson.Audio.SoundButtonListener
+  button: {fileID: 394125677}
+  action: {fileID: 11400000, guid: eb36e970fac5abd43bf97bacc0764582, type: 2}
+  panel: {fileID: 0}
+  hoverTextColor: {r: 1, g: 1, b: 1, a: 1}
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  buttonText: {fileID: 0}
+  playClip: {fileID: 11400000, guid: d8dc3f3415378644aa7785d976d507ab, type: 2}
+  clip: {fileID: 8300000, guid: 1217fccba35eb9e4fa0681ba5ae8fe91, type: 3}
+  type: 2
 --- !u!1 &430552161
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,8 +1691,8 @@ GameObject:
   - component: {fileID: 437758947}
   - component: {fileID: 437758946}
   - component: {fileID: 437758945}
-  - component: {fileID: 437758948}
   - component: {fileID: 437758949}
+  - component: {fileID: 437758950}
   m_Layer: 5
   m_Name: Prev
   m_TagString: Untagged
@@ -1686,10 +1714,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 793848026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 48, y: -48}
-  m_SizeDelta: {x: 96, y: 32}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &437758945
 MonoBehaviour:
@@ -1751,7 +1779,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 437758949}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -1763,24 +1791,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437758942}
   m_CullTransparentMesh: 1
---- !u!114 &437758948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 437758942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52825713b04b1bc4da618487147c4178, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Crimson.UI.But.ButtonListener
-  button: {fileID: 437758946}
-  action: {fileID: 11400000, guid: 0e77dc6dd9983dd41838748dacd91c89, type: 2}
-  panel: {fileID: 0}
-  hoverTextColor: {r: 1, g: 1, b: 1, a: 1}
-  baseColor: {r: 1, g: 1, b: 1, a: 1}
-  buttonText: {fileID: 0}
 --- !u!114 &437758949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1811,6 +1821,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &437758950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437758942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb1f7d4eb4f3d345a4ef5b9a9cf6e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Crimson.Audio.SoundButtonListener
+  button: {fileID: 437758946}
+  action: {fileID: 11400000, guid: 0e77dc6dd9983dd41838748dacd91c89, type: 2}
+  panel: {fileID: 0}
+  hoverTextColor: {r: 1, g: 1, b: 1, a: 1}
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  buttonText: {fileID: 0}
+  playClip: {fileID: 11400000, guid: d8dc3f3415378644aa7785d976d507ab, type: 2}
+  clip: {fileID: 8300000, guid: 1217fccba35eb9e4fa0681ba5ae8fe91, type: 3}
+  type: 2
 --- !u!1 &526890576
 GameObject:
   m_ObjectHideFlags: 0
@@ -2376,10 +2407,10 @@ RectTransform:
   - {fileID: 394125674}
   m_Father: {fileID: 1264623224}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 960, y: -537.9834}
-  m_SizeDelta: {x: 544, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &793848027
 MonoBehaviour:
@@ -2528,7 +2559,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 801792985}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -3322,8 +3353,8 @@ GameObject:
   - component: {fileID: 1177388770}
   - component: {fileID: 1177388769}
   - component: {fileID: 1177388768}
-  - component: {fileID: 1177388767}
   - component: {fileID: 1177388771}
+  - component: {fileID: 1177388772}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -3350,24 +3381,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1872, y: -16}
   m_SizeDelta: {x: 96, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1177388767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1177388764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52825713b04b1bc4da618487147c4178, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Crimson.UI.But.ButtonListener
-  button: {fileID: 1177388769}
-  action: {fileID: 11400000, guid: ce857a58e015930409c0cb8902d1f6e4, type: 2}
-  panel: {fileID: 0}
-  hoverTextColor: {r: 1, g: 1, b: 1, a: 1}
-  baseColor: {r: 1, g: 1, b: 1, a: 1}
-  buttonText: {fileID: 0}
 --- !u!114 &1177388768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3470,6 +3483,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1177388772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177388764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb1f7d4eb4f3d345a4ef5b9a9cf6e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Crimson.Audio.SoundButtonListener
+  button: {fileID: 1177388769}
+  action: {fileID: 11400000, guid: ce857a58e015930409c0cb8902d1f6e4, type: 2}
+  panel: {fileID: 0}
+  hoverTextColor: {r: 1, g: 1, b: 1, a: 1}
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  buttonText: {fileID: 0}
+  playClip: {fileID: 11400000, guid: d8dc3f3415378644aa7785d976d507ab, type: 2}
+  clip: {fileID: 8300000, guid: 1217fccba35eb9e4fa0681ba5ae8fe91, type: 3}
+  type: 2
 --- !u!1 &1182539322
 GameObject:
   m_ObjectHideFlags: 0
@@ -3626,6 +3660,7 @@ GameObject:
   - component: {fileID: 1228246440}
   - component: {fileID: 1228246439}
   - component: {fileID: 1228246443}
+  - component: {fileID: 1228246444}
   m_Layer: 5
   m_Name: Prev
   m_TagString: Untagged
@@ -3772,6 +3807,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1228246444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228246436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb1f7d4eb4f3d345a4ef5b9a9cf6e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Crimson.Audio.SoundButtonListener
+  button: {fileID: 0}
+  action: {fileID: 0}
+  panel: {fileID: 0}
+  hoverTextColor: {r: 1, g: 1, b: 1, a: 1}
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  buttonText: {fileID: 0}
+  playClip: {fileID: 0}
+  clip: {fileID: 0}
+  type: 0
 --- !u!1 &1242884298
 GameObject:
   m_ObjectHideFlags: 0
@@ -3784,8 +3840,8 @@ GameObject:
   - component: {fileID: 1242884304}
   - component: {fileID: 1242884303}
   - component: {fileID: 1242884302}
-  - component: {fileID: 1242884301}
   - component: {fileID: 1242884305}
+  - component: {fileID: 1242884306}
   m_Layer: 5
   m_Name: Prev
   m_TagString: Untagged
@@ -3812,24 +3868,6 @@ RectTransform:
   m_AnchoredPosition: {x: 48, y: -16}
   m_SizeDelta: {x: 96, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1242884301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1242884298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52825713b04b1bc4da618487147c4178, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Crimson.UI.But.ButtonListener
-  button: {fileID: 1242884303}
-  action: {fileID: 11400000, guid: 6fa2cc5dff44b7a40a5f723b31f54325, type: 2}
-  panel: {fileID: 0}
-  hoverTextColor: {r: 1, g: 1, b: 1, a: 1}
-  baseColor: {r: 1, g: 1, b: 1, a: 1}
-  buttonText: {fileID: 0}
 --- !u!114 &1242884302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3932,6 +3970,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1242884306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242884298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb1f7d4eb4f3d345a4ef5b9a9cf6e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Crimson.Audio.SoundButtonListener
+  button: {fileID: 1242884303}
+  action: {fileID: 11400000, guid: 6fa2cc5dff44b7a40a5f723b31f54325, type: 2}
+  panel: {fileID: 0}
+  hoverTextColor: {r: 1, g: 1, b: 1, a: 1}
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  buttonText: {fileID: 0}
+  playClip: {fileID: 11400000, guid: d8dc3f3415378644aa7785d976d507ab, type: 2}
+  clip: {fileID: 8300000, guid: 1217fccba35eb9e4fa0681ba5ae8fe91, type: 3}
+  type: 2
 --- !u!1 &1264623223
 GameObject:
   m_ObjectHideFlags: 0
@@ -3949,7 +4008,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1264623224
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4131,6 +4190,7 @@ GameObject:
   - component: {fileID: 1282099388}
   - component: {fileID: 1282099387}
   - component: {fileID: 1282099391}
+  - component: {fileID: 1282099392}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -4277,6 +4337,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1282099392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282099384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb1f7d4eb4f3d345a4ef5b9a9cf6e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Crimson.Audio.SoundButtonListener
+  button: {fileID: 0}
+  action: {fileID: 0}
+  panel: {fileID: 0}
+  hoverTextColor: {r: 1, g: 1, b: 1, a: 1}
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  buttonText: {fileID: 0}
+  playClip: {fileID: 0}
+  clip: {fileID: 0}
+  type: 0
 --- !u!1 &1350760654
 GameObject:
   m_ObjectHideFlags: 0
@@ -4672,6 +4753,7 @@ GameObject:
   - component: {fileID: 1679133224}
   - component: {fileID: 1679133223}
   - component: {fileID: 1679133227}
+  - component: {fileID: 1679133228}
   m_Layer: 5
   m_Name: Prev
   m_TagString: Untagged
@@ -4818,6 +4900,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1679133228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679133220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb1f7d4eb4f3d345a4ef5b9a9cf6e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Crimson.Audio.SoundButtonListener
+  button: {fileID: 0}
+  action: {fileID: 0}
+  panel: {fileID: 0}
+  hoverTextColor: {r: 1, g: 1, b: 1, a: 1}
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  buttonText: {fileID: 0}
+  playClip: {fileID: 0}
+  clip: {fileID: 0}
+  type: 0
 --- !u!1 &1779115586
 GameObject:
   m_ObjectHideFlags: 0
@@ -4830,8 +4933,8 @@ GameObject:
   - component: {fileID: 1779115592}
   - component: {fileID: 1779115591}
   - component: {fileID: 1779115590}
-  - component: {fileID: 1779115588}
   - component: {fileID: 1779115593}
+  - component: {fileID: 1779115594}
   m_Layer: 5
   m_Name: Return Button
   m_TagString: Untagged
@@ -4859,24 +4962,6 @@ RectTransform:
   m_AnchoredPosition: {x: 64, y: -25.5}
   m_SizeDelta: {x: 128, y: 51}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1779115588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779115586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52825713b04b1bc4da618487147c4178, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Crimson.UI.But.ButtonListener
-  button: {fileID: 1779115591}
-  action: {fileID: 11400000, guid: 0d5f4832392f9534a939671f83077436, type: 2}
-  panel: {fileID: 0}
-  hoverTextColor: {r: 1, g: 0.6392157, b: 0, a: 1}
-  baseColor: {r: 1, g: 1, b: 1, a: 1}
-  buttonText: {fileID: 433104938}
 --- !u!114 &1779115590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4979,6 +5064,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1779115594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779115586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb1f7d4eb4f3d345a4ef5b9a9cf6e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Crimson.Audio.SoundButtonListener
+  button: {fileID: 1779115591}
+  action: {fileID: 11400000, guid: 0d5f4832392f9534a939671f83077436, type: 2}
+  panel: {fileID: 0}
+  hoverTextColor: {r: 1, g: 0.6392157, b: 0, a: 1}
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  buttonText: {fileID: 433104938}
+  playClip: {fileID: 11400000, guid: d8dc3f3415378644aa7785d976d507ab, type: 2}
+  clip: {fileID: 8300000, guid: 1217fccba35eb9e4fa0681ba5ae8fe91, type: 3}
+  type: 2
 --- !u!1 &1871679188
 GameObject:
   m_ObjectHideFlags: 0
@@ -5277,7 +5383,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1913156205}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -5409,11 +5515,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7377608490223640661, guid: 1f04ad058996c724fbfe03cf924a01a4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 960.00006
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 7377608490223640661, guid: 1f04ad058996c724fbfe03cf924a01a4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -480.41757
+      value: -464.63315
       objectReference: {fileID: 0}
     - target: {fileID: 7377608490223640661, guid: 1f04ad058996c724fbfe03cf924a01a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5624,8 +5730,8 @@ GameObject:
   - component: {fileID: 2061130760}
   - component: {fileID: 2061130759}
   - component: {fileID: 2061130758}
-  - component: {fileID: 2061130756}
   - component: {fileID: 2061130761}
+  - component: {fileID: 2061130762}
   m_Layer: 5
   m_Name: Return Button
   m_TagString: Untagged
@@ -5653,24 +5759,6 @@ RectTransform:
   m_AnchoredPosition: {x: 64, y: -25.5}
   m_SizeDelta: {x: 128, y: 51}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2061130756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2061130754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52825713b04b1bc4da618487147c4178, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Crimson.UI.But.ButtonListener
-  button: {fileID: 2061130759}
-  action: {fileID: 11400000, guid: 0d5f4832392f9534a939671f83077436, type: 2}
-  panel: {fileID: 0}
-  hoverTextColor: {r: 1, g: 0.6392157, b: 0, a: 1}
-  baseColor: {r: 1, g: 1, b: 1, a: 1}
-  buttonText: {fileID: 753851210}
 --- !u!114 &2061130758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5773,6 +5861,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2061130762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061130754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb1f7d4eb4f3d345a4ef5b9a9cf6e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Crimson.Audio.SoundButtonListener
+  button: {fileID: 2061130759}
+  action: {fileID: 11400000, guid: 0d5f4832392f9534a939671f83077436, type: 2}
+  panel: {fileID: 0}
+  hoverTextColor: {r: 1, g: 0.6392157, b: 0, a: 1}
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  buttonText: {fileID: 753851210}
+  playClip: {fileID: 11400000, guid: d8dc3f3415378644aa7785d976d507ab, type: 2}
+  clip: {fileID: 8300000, guid: 1217fccba35eb9e4fa0681ba5ae8fe91, type: 3}
+  type: 2
 --- !u!1 &2067017693
 GameObject:
   m_ObjectHideFlags: 0
@@ -6119,6 +6228,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 994945851}
     - target: {fileID: 4576814797843247567, guid: 1f04ad058996c724fbfe03cf924a01a4, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4d4018de6e2428d409e60198b1dbf35a, type: 3}
+    - target: {fileID: 4576814797843247567, guid: 1f04ad058996c724fbfe03cf924a01a4, type: 3}
+      propertyPath: type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4576814797843247567, guid: 1f04ad058996c724fbfe03cf924a01a4, type: 3}
       propertyPath: action
       value: 
       objectReference: {fileID: 11400000, guid: d4af0e056d5adf84b8b90f07d8a217f8, type: 2}
@@ -6136,7 +6253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7377608490223640661, guid: 1f04ad058996c724fbfe03cf924a01a4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7377608490223640661, guid: 1f04ad058996c724fbfe03cf924a01a4, type: 3}
       propertyPath: m_AnchorMin.x
@@ -6144,15 +6261,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7377608490223640661, guid: 1f04ad058996c724fbfe03cf924a01a4, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7377608490223640661, guid: 1f04ad058996c724fbfe03cf924a01a4, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 288
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7377608490223640661, guid: 1f04ad058996c724fbfe03cf924a01a4, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 96
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7377608490223640661, guid: 1f04ad058996c724fbfe03cf924a01a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6184,11 +6301,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7377608490223640661, guid: 1f04ad058996c724fbfe03cf924a01a4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 272
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7377608490223640661, guid: 1f04ad058996c724fbfe03cf924a01a4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -48
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7377608490223640661, guid: 1f04ad058996c724fbfe03cf924a01a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

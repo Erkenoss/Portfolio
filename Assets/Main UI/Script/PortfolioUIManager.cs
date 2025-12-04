@@ -121,12 +121,6 @@ namespace Crimson.Portfolio
         #endregion
 
         #region Events
-
-        /// <summary>
-        /// Event to notify what happened when we change panel
-        /// </summary>
-        public event Action OnChangedPanel = null;
-
         #endregion
 
         #region MonoBehaviour Callbacks
@@ -140,8 +134,6 @@ namespace Crimson.Portfolio
 
         private void Start()
         {
-            OnChangedPanel += StartPageMusic;
-            
             if (view == null)
             {
                 return;
@@ -155,18 +147,12 @@ namespace Crimson.Portfolio
                 return;
             }
 
-            OnChangedPanel?.Invoke();
             AlphaModifier();
 
             if (AudioManager.Instance != null)
             {
-                AudioManager.Instance.DisableMusic();
+                AudioManager.Instance.EnableMusic();
             }
-        }
-
-        protected override void OnDestroy()
-        {
-            OnChangedPanel -= StartPageMusic;
         }
 
         #endregion
@@ -184,8 +170,6 @@ namespace Crimson.Portfolio
 
             view.UpdateView(containerList[index]);
             panel = containerList[index].Panel;
-
-            OnChangedPanel?.Invoke();
         }
 
         public override void Prev()
@@ -199,8 +183,6 @@ namespace Crimson.Portfolio
             
             view.UpdateView(containerList[index]);
             panel = containerList[index].Panel;
-
-            OnChangedPanel?.Invoke();
         }
 
         /// <summary>
@@ -220,7 +202,6 @@ namespace Crimson.Portfolio
         public override void SetPanel()
         {
             ChangePanel();
-            OnChangedPanel?.Invoke();
         }
 
         /// <summary>
@@ -345,7 +326,6 @@ namespace Crimson.Portfolio
                 AlphaModifier();
 
                 currentClip = containerList[index].Audio;
-                OnChangedPanel?.Invoke();
                 subIndex = 0;
             }
         }
@@ -380,19 +360,6 @@ namespace Crimson.Portfolio
                     videoImage.color = color;
                 }
             }
-        }
-
-        /// <summary>
-        /// Base on panel, start the music page
-        /// </summary>
-        private void StartPageMusic()
-        {
-            if (AudioManager.Instance == null)
-            {
-                return;
-            }
-
-            AudioManager.Instance.Play(EAudio.Music, currentClip, true);
         }
 
         #endregion

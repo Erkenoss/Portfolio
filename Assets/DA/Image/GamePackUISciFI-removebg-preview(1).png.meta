@@ -337,7 +337,7 @@ TextureImporter:
         width: 23
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -346,6 +346,28 @@ TextureImporter:
       bones: []
       spriteID: f07a49f7680b3b847a0bdedf0e5ce1e0
       internalID: -1583211506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GamePackUISciFI-removebg-preview(1)_8
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 17
+        width: 107
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812d01154b4d27a4981b6848a94f3482
+      internalID: -841602933
       vertices: []
       indices: 
       edges: []
@@ -372,6 +394,7 @@ TextureImporter:
       GamePackUISciFI-removebg-preview(1)_5: -662669371
       GamePackUISciFI-removebg-preview(1)_6: 937307568
       GamePackUISciFI-removebg-preview(1)_7: -1583211506
+      GamePackUISciFI-removebg-preview(1)_8: -841602933
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -205,7 +205,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - Break
+      - Pause
       - Pause
       Flags: 0000
       Languages_Touch: []
@@ -249,6 +249,14 @@ MonoBehaviour:
       - Application Aidette
       Flags: 0000
       Languages_Touch: []
+    - Term: Main Menu/Description
+      TermType: 0
+      Description: 
+      Languages:
+      - Description
+      - Description
+      Flags: 0000
+      Languages_Touch: []
     - Term: Model Description/
       TermType: 0
       Description: 
@@ -279,6 +287,14 @@ MonoBehaviour:
       Languages:
       - The differents realization in Game Development
       - The differents realization in Game Development
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Model Description/Other
+      TermType: 0
+      Description: 
+      Languages:
+      - The other type of development
+      - "Les autres types de D\xE9veloppement"
       Flags: 0000
       Languages_Touch: []
     - Term: Model Description/VICES
@@ -415,7 +431,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyHX52w1eV6SR0KmjuUzHo31IjY_rK-IM3NwgGeQW1A1y6KFUZRG9VUmiHF_bncQQQ9/exec
     Google_SpreadsheetKey: 1XY4WZprX3PYBEaobA6i0FSPYsDaWBjeIv74OLrtv_2c
     Google_SpreadsheetName: I2Loc Portfolio Localization
-    Google_LastUpdatedVersion: 1762273719389
+    Google_LastUpdatedVersion: 1771107137775
     Google_Password: Portfolio
     GoogleUpdateFrequency: 3
     GoogleInEditorCheckFrequency: 2

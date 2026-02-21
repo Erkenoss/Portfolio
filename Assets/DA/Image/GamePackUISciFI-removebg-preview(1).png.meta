@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d97d8d5e145a8434db12a15e3d5b5c9b
+guid: 1abc1ff13fa1a8941acab7dc1543e4dc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -175,35 +175,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GamePackUISciFI_0
+      name: GamePackUISciFI-removebg-preview(1)_0
       rect:
         serializedVersion: 2
-        x: 275
-        y: 286
-        width: 129
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 1, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 396662a4647a3f84eb499a1ff5805d3d
-      internalID: 552348216
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GamePackUISciFI_1
-      rect:
-        serializedVersion: 2
-        x: 410
-        y: 20
-        width: 126
-        height: 56
+        x: 478
+        y: 136
+        width: 40
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb69071ac17bc1e4c9b0df47226dfa42
-      internalID: -1726387404
+      spriteID: 220b9d1b8128622419261348472a27e4
+      internalID: 218872411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GamePackUISciFI_2
+      name: GamePackUISciFI-removebg-preview(1)_1
       rect:
         serializedVersion: 2
-        x: 554
-        y: 15
-        width: 128
-        height: 60
+        x: 316
+        y: 48
+        width: 11
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf555a6e77df23e4e9fc827bb59e4a9f
-      internalID: 414849509
+      spriteID: 673998ea50073f241ae5ec711a363451
+      internalID: 108705447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GamePackUISciFI_3
+      name: GamePackUISciFI-removebg-preview(1)_2
       rect:
         serializedVersion: 2
-        x: 277
-        y: 17
-        width: 28
-        height: 18
+        x: 595
+        y: 14
+        width: 103
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f3d6d51ba4dd9943b4fde80f7dcffca
-      internalID: 64508242
+      spriteID: f42d8bbbb54e7714298e7a3e82ccc705
+      internalID: 2124193354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GamePackUISciFI_4
+      name: GamePackUISciFI-removebg-preview(1)_3
       rect:
         serializedVersion: 2
-        x: 122
-        y: 284
-        width: 128
-        height: 13
+        x: 473
+        y: 14
+        width: 107
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,20 +256,86 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51fc21a905af633498d71d319edbe413
-      internalID: 667985181
+      spriteID: 8fc6393dea4d4fc4089a26b032f0fb59
+      internalID: -666524411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GamePackUISciFI_5
+      name: GamePackUISciFI-removebg-preview(1)_4
       rect:
         serializedVersion: 2
-        x: 498
-        y: 221
-        width: 44
+        x: 105
+        y: 242
+        width: 106
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ae5003fd0f1444baabc331665cd5bb
+      internalID: 1628691871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GamePackUISciFI-removebg-preview(1)_5
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 247
+        width: 104
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28b575749f134a4493966266df35c30
+      internalID: -662669371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GamePackUISciFI-removebg-preview(1)_6
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 78
+        width: 116
         height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7f111d1c1b6eb48a5b3b6725eb382a
+      internalID: 937307568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GamePackUISciFI-removebg-preview(1)_7
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 13
+        width: 23
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,8 +344,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9a239980aebd914b86bad6117e7b87a
-      internalID: -1386316131
+      spriteID: f07a49f7680b3b847a0bdedf0e5ce1e0
+      internalID: -1583211506
       vertices: []
       indices: 
       edges: []
@@ -310,7 +354,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e0e9dfa2b284d04e8cbeaec3e9a4ac5
+    spriteID: b3c8f301f4bbbe142af3fc727b9e4e49
     internalID: 0
     vertices: []
     indices: 
@@ -320,12 +364,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GamePackUISciFI_0: 552348216
-      GamePackUISciFI_1: -1726387404
-      GamePackUISciFI_2: 414849509
-      GamePackUISciFI_3: 64508242
-      GamePackUISciFI_4: 667985181
-      GamePackUISciFI_5: -1386316131
+      GamePackUISciFI-removebg-preview(1)_0: 218872411
+      GamePackUISciFI-removebg-preview(1)_1: 108705447
+      GamePackUISciFI-removebg-preview(1)_2: 2124193354
+      GamePackUISciFI-removebg-preview(1)_3: -666524411
+      GamePackUISciFI-removebg-preview(1)_4: 1628691871
+      GamePackUISciFI-removebg-preview(1)_5: -662669371
+      GamePackUISciFI-removebg-preview(1)_6: 937307568
+      GamePackUISciFI-removebg-preview(1)_7: -1583211506
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

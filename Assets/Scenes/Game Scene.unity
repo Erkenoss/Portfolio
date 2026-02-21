@@ -254,6 +254,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -430,6 +431,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -582,7 +584,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 99820996}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -614,7 +616,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1726387404, guid: d97d8d5e145a8434db12a15e3d5b5c9b, type: 3}
+  m_Sprite: {fileID: -666524411, guid: 1abc1ff13fa1a8941acab7dc1543e4dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -780,6 +782,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1103,7 +1106,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 64508242, guid: d97d8d5e145a8434db12a15e3d5b5c9b, type: 3}
+  m_Sprite: {fileID: -1583211506, guid: 1abc1ff13fa1a8941acab7dc1543e4dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1408,7 +1411,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 64508242, guid: d97d8d5e145a8434db12a15e3d5b5c9b, type: 3}
+  m_Sprite: {fileID: -1583211506, guid: 1abc1ff13fa1a8941acab7dc1543e4dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1638,6 +1641,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1811,7 +1815,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 64508242, guid: d97d8d5e145a8434db12a15e3d5b5c9b, type: 3}
+  m_Sprite: {fileID: -1583211506, guid: 1abc1ff13fa1a8941acab7dc1543e4dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2016,14 +2020,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715545900}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 12
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -2331,6 +2335,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -2612,7 +2617,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1726387404, guid: d97d8d5e145a8434db12a15e3d5b5c9b, type: 3}
+  m_Sprite: {fileID: -666524411, guid: 1abc1ff13fa1a8941acab7dc1543e4dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2776,7 +2781,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1726387404, guid: d97d8d5e145a8434db12a15e3d5b5c9b, type: 3}
+  m_Sprite: {fileID: -666524411, guid: 1abc1ff13fa1a8941acab7dc1543e4dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3300,6 +3305,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -3441,7 +3447,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1177388771}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -3473,7 +3479,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 64508242, guid: d97d8d5e145a8434db12a15e3d5b5c9b, type: 3}
+  m_Sprite: {fileID: -1583211506, guid: 1abc1ff13fa1a8941acab7dc1543e4dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3797,7 +3803,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 64508242, guid: d97d8d5e145a8434db12a15e3d5b5c9b, type: 3}
+  m_Sprite: {fileID: -1583211506, guid: 1abc1ff13fa1a8941acab7dc1543e4dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3928,7 +3934,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1242884305}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -3960,7 +3966,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 64508242, guid: d97d8d5e145a8434db12a15e3d5b5c9b, type: 3}
+  m_Sprite: {fileID: -1583211506, guid: 1abc1ff13fa1a8941acab7dc1543e4dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4327,7 +4333,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 64508242, guid: d97d8d5e145a8434db12a15e3d5b5c9b, type: 3}
+  m_Sprite: {fileID: -1583211506, guid: 1abc1ff13fa1a8941acab7dc1543e4dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4512,7 +4518,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1726387404, guid: d97d8d5e145a8434db12a15e3d5b5c9b, type: 3}
+  m_Sprite: {fileID: -666524411, guid: 1abc1ff13fa1a8941acab7dc1543e4dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4679,7 +4685,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 960, y: -393.58862}
+  m_AnchoredPosition: {x: 960, y: -373.93768}
   m_SizeDelta: {x: 1920, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1613073460
@@ -4890,7 +4896,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 64508242, guid: d97d8d5e145a8434db12a15e3d5b5c9b, type: 3}
+  m_Sprite: {fileID: -1583211506, guid: 1abc1ff13fa1a8941acab7dc1543e4dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5054,7 +5060,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1726387404, guid: d97d8d5e145a8434db12a15e3d5b5c9b, type: 3}
+  m_Sprite: {fileID: -666524411, guid: 1abc1ff13fa1a8941acab7dc1543e4dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5220,6 +5226,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -5415,7 +5422,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1726387404, guid: d97d8d5e145a8434db12a15e3d5b5c9b, type: 3}
+  m_Sprite: {fileID: -666524411, guid: 1abc1ff13fa1a8941acab7dc1543e4dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5519,7 +5526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7377608490223640661, guid: 1f04ad058996c724fbfe03cf924a01a4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -464.63315
+      value: -441.47153
       objectReference: {fileID: 0}
     - target: {fileID: 7377608490223640661, guid: 1f04ad058996c724fbfe03cf924a01a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5533,6 +5540,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8715524845668566354, guid: 1f04ad058996c724fbfe03cf924a01a4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2124193354, guid: 1abc1ff13fa1a8941acab7dc1543e4dc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5676,7 +5687,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 2045261684}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -5708,7 +5719,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1726387404, guid: d97d8d5e145a8434db12a15e3d5b5c9b, type: 3}
+  m_Sprite: {fileID: -666524411, guid: 1abc1ff13fa1a8941acab7dc1543e4dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5851,7 +5862,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1726387404, guid: d97d8d5e145a8434db12a15e3d5b5c9b, type: 3}
+  m_Sprite: {fileID: -666524411, guid: 1abc1ff13fa1a8941acab7dc1543e4dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6017,6 +6028,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -6319,6 +6331,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8715524845668566354, guid: 1f04ad058996c724fbfe03cf924a01a4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2124193354, guid: 1abc1ff13fa1a8941acab7dc1543e4dc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

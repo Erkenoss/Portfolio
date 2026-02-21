@@ -145,6 +145,11 @@ namespace Crimson.Audio
                     containers.Add(tempContainer);
                 }
 
+                if (container == null || clip == null)
+                {
+                    return;
+                }
+
                 container.Source.PlayOneShot(clip, GetVolume(type));
             }
             else
